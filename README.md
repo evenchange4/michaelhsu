@@ -3,7 +3,6 @@
 > The Michael Hsu CLI
 
 [![Travis][build-badge]][build]
-[![Codecov Status][codecov-badge]][codecov]
 [![npm package][npm-badge]][npm]
 [![npm downloads][npm-downloads]][npm]
 
@@ -91,7 +90,7 @@ $ npm run changelog
 
 MIT: [http://michaelhsu.mit-license.org](http://michaelhsu.mit-license.org)
 
-[build-badge]: https://img.shields.io/travis/evenchange4/michaelhsu/master.svg?style=flat-square
+[build-badge]: https://travis-ci.com/evenchange4/michaelhsu.svg?branch=master
 [build]: https://travis-ci.com/evenchange4/michaelhsu
 [npm-badge]: https://img.shields.io/npm/v/michaelhsu.svg?style=flat-square
 [npm]: https://www.npmjs.org/package/michaelhsu
