@@ -14,7 +14,9 @@
     "eslint": "eslint ./",
     "flow": "flow",
     "format":
-      "prettier --write 'src/**/*.{js,json}' 'bin/**/*.{js,json}' 'tests/**/*.{js,json}' '*.md' '*.json'"
+      "prettier --write 'src/**/*.{js,json}' 'bin/**/*.{js,json}' 'tests/**/*.{js,json}' '*.md' '*.json'",
+    "changelog":
+      "github-changes -o evenchange4 -r michaelhsu -b master -f ./CHANGELOG.md --order-semver --use-commit-body"
   },
   "dependencies": {
     "chalk": "^2.4.1",
@@ -41,13 +43,18 @@
     "eslint-plugin-prettier": "^2.6.0",
     "flow-bin": "^0.72.0",
     "github-changes": "^1.1.2",
-    "husky": "^0.14.3",
+    "husky": "^1.0.0-rc.6",
     "jest": "^22.4.4",
     "lint-staged": "^7.1.1",
     "prettier": "^1.12.1"
   },
   "lint-staged": {
     "*.{js,json,md}": ["prettier --write", "git add"]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "prettier": {
     "trailingComma": "es5",
