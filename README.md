@@ -2,6 +2,18 @@
 
 > The Michael Hsu CLI
 
+[![Travis][build-badge]][build]
+[![Codecov Status][codecov-badge]][codecov]
+[![npm package][npm-badge]][npm]
+[![npm downloads][npm-downloads]][npm]
+
+[![Dependency Status][dependency-badge]][dependency]
+[![devDependency Status][devdependency-badge]][devdependency]
+[![peerDependency Status][peerdependency-badge]][peerdependency]
+
+[![prettier][prettier-badge]][prettier]
+[![license][license-badge]][license]
+
 ## Usage
 
 ```shell
@@ -11,10 +23,6 @@ $ npx michaelhsu
 ## Demo
 
 ![demo](./docs/demo.gif)
-
-## Inspiration
-
-* https://github.com/sindresorhus/sindresorhus
 
 ## API
 
@@ -65,6 +73,38 @@ $ npm version patch
 $ npm run changelog
 ```
 
-## License
+---
 
-MIT © [Michael Hsu](https://michaelhsu.tw)
+## Inspiration
+
+* https://github.com/sindresorhus/sindresorhus
+
+## CONTRIBUTING
+
+* ⇄ Pull requests and ★ Stars are always welcome.
+* For bugs and feature requests, please create an issue.
+* Pull requests must be accompanied by passing automated tests (`$ yarn test`).
+
+## [CHANGELOG](CHANGELOG.md)
+
+## [LICENSE](LICENSE)
+
+MIT: [http://michaelhsu.mit-license.org](http://michaelhsu.mit-license.org)
+
+[build-badge]: https://img.shields.io/travis/evenchange4/michaelhsu/master.svg?style=flat-square
+[build]: https://travis-ci.com/evenchange4/michaelhsu
+[npm-badge]: https://img.shields.io/npm/v/michaelhsu.svg?style=flat-square
+[npm]: https://www.npmjs.org/package/michaelhsu
+[codecov-badge]: https://img.shields.io/codecov/c/github/evenchange4/michaelhsu.svg?style=flat-square
+[codecov]: https://codecov.io/github/evenchange4/michaelhsu?branch=master
+[npm-downloads]: https://img.shields.io/npm/dt/michaelhsu.svg?style=flat-square
+[license-badge]: https://img.shields.io/npm/l/michaelhsu.svg?style=flat-square
+[license]: http://michaelhsu.mit-license.org/
+[dependency-badge]: https://david-dm.org/evenchange4/michaelhsu.svg?style=flat-square
+[dependency]: https://david-dm.org/evenchange4/michaelhsu
+[devdependency-badge]: https://david-dm.org/evenchange4/michaelhsu/dev-status.svg?style=flat-square
+[devdependency]: https://david-dm.org/evenchange4/michaelhsu#info=devDependencies
+[peerdependency-badge]: https://david-dm.org/evenchange4/michaelhsu/peer-status.svg?style=flat-square
+[peerdependency]: https://david-dm.org/evenchange4/michaelhsu#info=peerDependencies
+[prettier-badge]: https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square
+[prettier]: https://github.com/prettier/prettier
