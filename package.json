@@ -31,22 +31,22 @@
     "yargs": "^11.0.0"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.3",
-    "codecov": "^3.0.2",
-    "danger": "^3.7.4",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-flowtype": "^2.46.3",
-    "eslint-plugin-import": "^2.12.0",
-    "eslint-plugin-jest": "^21.15.1",
-    "eslint-plugin-prettier": "^2.6.0",
-    "flow-bin": "^0.72.0",
-    "github-changes": "^1.1.2",
-    "husky": "^1.0.0-rc.6",
-    "jest": "^22.4.4",
-    "lint-staged": "^7.1.1",
-    "prettier": "^1.12.1"
+    "babel-eslint": "8.2.3",
+    "codecov": "3.0.2",
+    "danger": "3.7.4",
+    "eslint": "4.19.1",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-flowtype": "2.46.3",
+    "eslint-plugin-import": "2.12.0",
+    "eslint-plugin-jest": "21.15.1",
+    "eslint-plugin-prettier": "2.6.0",
+    "flow-bin": "0.72.0",
+    "github-changes": "1.1.2",
+    "husky": "1.0.0-rc.6",
+    "jest": "22.4.4",
+    "lint-staged": "7.1.1",
+    "prettier": "1.12.1"
   },
   "lint-staged": {
     "*.{js,json,md}": ["prettier --write", "git add"]
