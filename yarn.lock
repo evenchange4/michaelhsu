@@ -1036,9 +1036,9 @@ ctype@0.5.3:
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/ctype/-/ctype-0.5.3.tgz#82c18c2461f74114ef16c135224ad0b9144ca12f"
 
-danger@3.7.4:
-  version "3.7.4"
-  resolved "https://registry.yarnpkg.com/danger/-/danger-3.7.4.tgz#ad230d03e90fdae62772e4c88b3f6a35500e2e1d"
+danger@3.7.11:
+  version "3.7.11"
+  resolved "https://registry.yarnpkg.com/danger/-/danger-3.7.11.tgz#aa1eb171a617ca6d5c9cdba0ba153c5f658fbde9"
   dependencies:
     "@octokit/rest" "^15.5.0"
     babel-polyfill "^6.23.0"
