@@ -2085,9 +2085,9 @@ ink-select-input@^1.1.0:
     lodash.isequal "^4.5.0"
     prop-types "^15.5.10"
 
-ink@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/ink/-/ink-0.4.1.tgz#8f93fcf5e0f2d671558256ba38a632b56bd2452b"
+ink@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/ink/-/ink-0.5.0.tgz#38911f1e4102388b4095336f0470cfc6419154dc"
   dependencies:
     arrify "^1.0.1"
     chalk "^2.0.1"
