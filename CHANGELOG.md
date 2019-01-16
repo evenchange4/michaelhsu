@@ -1,5 +1,11 @@
 ## Unreleased (2019-01-16)
 
+## <small>1.1.1 (2019-01-16)</small>
+
+- 1.1.1 ([19766fa](https://github.com/evenchange4/michaelhsu/commit/19766fa))
+- fix(travis): update npm release key ([dff1a53](https://github.com/evenchange4/michaelhsu/commit/dff1a53))
+- docs(CHANGELOG): release 1.1.0 ([a431ad5](https://github.com/evenchange4/michaelhsu/commit/a431ad5))
+
 ## 1.1.0 (2019-01-16)
 
 - 1.1.0 ([a81bfd1](https://github.com/evenchange4/michaelhsu/commit/a81bfd1))
