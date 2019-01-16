@@ -1,9 +1,11 @@
-# dependencies
-/node_modules
+node_modules/
 
-# testing
-/coverage
+# jest
+coverage/
+
+# lib
+lib/
+es/
 
 # flow
-/flow-typed
-/flow-coverage
+flow-typed/

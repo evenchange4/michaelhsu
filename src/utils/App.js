@@ -1,10 +1,13 @@
-const { h, Component } = require('ink'); // eslint-disable-line
-const SelectInput = require('ink-select-input'); // eslint-disable-line
-const openLink = require('./utils/openLink');
-const fetchPosts = require('./utils/fetchPosts');
-const format = require('./utils/format');
+// @flow
+/** @jsx h */
+import { h, Component } from 'ink';
+import SelectInput from 'ink-select-input';
+import openLink from './openLink';
+import fetchPosts from './fetchPosts';
+import format from './format';
+import { type Item, type Post } from './type.flow';
 
-const items = [
+const items: Array<Item> = [
   { label: 'Website', url: 'https://michaelhsu.tw' },
   { label: 'Twitter', url: 'https://twitter.com/evenchange4' },
   { label: 'GitHub', url: 'https://github.com/evenchange4' },
@@ -13,13 +16,9 @@ const items = [
   { label: 'Quit', action: () => process.exit() },
 ];
 
-class App extends Component {
-  constructor() {
-    super();
-    this.state = { posts: undefined };
-    this.handleSelect = this.handleSelect.bind(this);
-    this.onBack = this.onBack.bind(this);
-  }
+class App extends Component<*, { posts: Array<Post> }> {
+  state = { posts: undefined };
+
   componentDidMount() {
     // Note: pre-fetch
     if (!this.cached) {
@@ -28,24 +27,28 @@ class App extends Component {
       });
     }
   }
-  handleSelect(item) {
+
+  onBack = () => this.setState({ posts: undefined });
+
+  handleSelect = (item: Item) => {
     if (item.url) openLink(item.url);
     if (item.label === 'Medium Latest Posts') {
       if (this.cached) {
         this.setState({ posts: this.cached });
-      } else {
+        return;
+      }
+
+      if (item.action) {
         item.action().then(posts => {
           this.setState({ posts });
           this.cached = posts;
         });
+        return;
       }
-      return;
     }
     if (item.action) item.action();
-  }
-  onBack() {
-    this.setState({ posts: undefined });
-  }
+  };
+
   render() {
     const { posts } = this.state;
     const { handleSelect, onBack } = this;
@@ -74,4 +77,4 @@ class App extends Component {
   }
 }
 
-module.exports = App;
+export default App;

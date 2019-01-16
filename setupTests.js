@@ -1,0 +1,2 @@
+// @flow
+jest.mock('yargs', () => () => {});

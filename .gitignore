@@ -1,10 +1,5 @@
-node_modules/
-.yarn-cache/
-
-# files
-npm-debug.log
-lerna-debug.log
-.DS_Store
-
-# jest
-coverage/
+/coverage
+/es
+/lib
+/node_modules
+npm-debug.log*

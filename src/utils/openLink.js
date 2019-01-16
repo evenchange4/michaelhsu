@@ -1,7 +1,7 @@
 // @flow
 
-const opn = require('opn');
+import opn from 'opn';
 
-const openLink = (url /* : string */) /* : void */ => opn(url, { wait: false });
+const openLink = (url: string): void => opn(url, { wait: false });
 
-module.exports = openLink;
+export default openLink;
