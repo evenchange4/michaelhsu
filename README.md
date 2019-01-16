@@ -3,6 +3,7 @@
 > The Michael Hsu CLI
 
 [![Travis][build-badge]][build]
+[![Codecov Status][codecov-badge]][codecov]
 [![npm package][npm-badge]][npm]
 [![npm downloads][npm-downloads]][npm]
 
@@ -45,15 +46,17 @@ For more information go to https://github.com/evenchange4/michaelhsu
 
 ```bash
 $ yarn install --pure-lockfile
-$ ./src/cli
+$ npm run help
 ```
 
 ## Test
 
 ```bash
+$ yarn run build
+$ yarn run flow-coverage
+$ yarn run test:watch
 $ yarn run format
 $ yarn run eslint
-$ yarn run flow
 ```
 
 ## Publish
