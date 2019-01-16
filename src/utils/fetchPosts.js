@@ -1,15 +1,8 @@
 // @flow
-const { request } = require('graphql-request');
+import { request } from 'graphql-request';
+import { type Post } from './type.flow';
 
-/* ::
-type Post = {
-  url: string,
-  title: string,
-  firstPublishedAt: number,
-}
- */
-
-const fetchPosts = async () /* : Promise<Array<Post>> */ => {
+const fetchPosts = async (): Promise<Array<Post>> => {
   const { posts } = await request(
     'https://micro-medium-api.now.sh/graphql',
     `query PostQuery($username: String!, $limit: Int) {
@@ -23,9 +16,9 @@ const fetchPosts = async () /* : Promise<Array<Post>> */ => {
     {
       username: 'evenchange4',
       limit: 10,
-    }
+    },
   );
   return posts;
 };
 
-module.exports = fetchPosts;
+export default fetchPosts;

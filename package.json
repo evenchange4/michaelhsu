@@ -1,80 +1,121 @@
 {
   "name": "michaelhsu",
   "version": "1.0.1",
-  "description": "The Michael Hsu CLI",
-  "repository": "https://github.com/evenchange4/michaelhsu",
-  "author": "Michael Hsu <evenchange4@gmail.com>",
-  "license": "MIT",
-  "files": ["src"],
-  "main": "src/cli.js",
+  "main": "lib/index.js",
+  "module": "es/index.js",
   "bin": {
-    "michaelhsu": "src/cli.js"
+    "michaelhsu": "bin/index.js"
   },
+  "sideEffects": false,
+  "files": [
+    "bin",
+    "es",
+    "lib",
+    "images"
+  ],
   "scripts": {
-    "eslint": "eslint ./",
+    "help": "NODE_ENV='TODO_USE_HSU_SCRIPTS' babel-node src/bin.js",
+    "build:override": "NODE_ENV='TODO_USE_HSU_SCRIPTS' babel src --out-dir lib",
+    "build": "hsu-scripts build src && npm run build:override",
+    "test": "NODE_ENV='test' jest --coverage",
+    "test:watch": "npm run test -- --watch",
     "flow": "flow",
-    "format":
-      "prettier --write 'src/**/*.{js,json}' 'bin/**/*.{js,json}' 'tests/**/*.{js,json}' '*.md' '*.json'",
-    "changelog":
-      "github-changes -o evenchange4 -r michaelhsu -b master -f ./CHANGELOG.md --order-semver --use-commit-body"
+    "flow-coverage": "hsu-scripts flow --threshold 76",
+    "eslint": "eslint ./",
+    "format": "prettier --write '**/*.{js,json,md,css,yaml,yml}' '*.{js,json,md,css,yaml,yml}'",
+    "changelog": "conventional-changelog --infile ./CHANGELOG.md --same-file --release-count 0 --output-unreleased"
   },
   "dependencies": {
-    "chalk": "^2.4.1",
-    "date-fns": "^1.29.0",
-    "graphql-request": "^1.6.0",
-    "import-jsx": "^1.3.0",
-    "ink": "^0.4.1",
-    "ink-select-input": "^1.1.0",
-    "opn": "^5.3.0",
-    "term-img": "^2.1.0",
-    "terminal-image": "^0.1.1",
-    "yargs": "^11.0.0"
+    "@babel/runtime": "^7.2.0",
+    "chalk": "^2.4.2",
+    "date-fns": "^2.0.0-alpha.27",
+    "graphql-request": "^1.8.2",
+    "ink": "^0.5.1",
+    "ink-select-input": "^2.0.0",
+    "opn": "^5.4.0",
+    "term-img": "^4.0.0",
+    "terminal-image": "^0.1.2",
+    "yargs": "^12.0.5"
   },
   "devDependencies": {
-    "babel-eslint": "8.2.3",
-    "codecov": "3.0.2",
-    "eslint": "4.19.1",
-    "eslint-config-airbnb-base": "12.1.0",
-    "eslint-config-prettier": "2.9.0",
-    "eslint-plugin-flowtype": "2.47.1",
-    "eslint-plugin-import": "2.12.0",
-    "eslint-plugin-jest": "21.15.2",
-    "eslint-plugin-prettier": "2.6.0",
-    "flow-bin": "0.72.0",
-    "github-changes": "1.1.2",
-    "husky": "1.0.0-rc.7",
-    "jest": "22.4.4",
-    "lint-staged": "7.1.2",
-    "prettier": "1.12.1"
+    "@babel/core": "7.2.2",
+    "@babel/node": "7.2.2",
+    "codecov": "3.1.0",
+    "conventional-changelog-cli": "2.0.11",
+    "eslint": "5.12.0",
+    "flow-bin": "0.90.0",
+    "hsu-scripts": "1.0.2",
+    "husky": "1.3.1",
+    "jest": "24.0.0-alpha.12",
+    "lint-staged": "8.1.0",
+    "prettier": "1.15.3"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/setupTests.js"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/**/*.test.js",
+      "!src/**/*.example.js"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/lib/",
+      "<rootDir>/es/"
+    ],
+    "resetMocks": true,
+    "resetModules": true
+  },
+  "babel": {
+    "presets": [
+      "./node_modules/hsu-scripts/babel.js",
+      [
+        "@babel/preset-env",
+        {
+          "loose": true,
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      "babel-plugin-add-module-exports",
+      [
+        "@babel/plugin-transform-runtime",
+        {
+          "useESModules": false
+        }
+      ]
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/hsu-scripts/eslint.js"
+    ]
   },
   "lint-staged": {
-    "*.{js,json,md}": ["prettier --write", "git add"]
+    "*.{js,json,md,css,yaml,yml}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
   },
-  "prettier": {
-    "trailingComma": "es5",
-    "singleQuote": true
+  "description": "The Michael Hsu CLI",
+  "author": "Michael Hsu <evenchange4@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/evenchange4/michaelhsu/issues",
+    "email": "evenchange4@gmail.com"
   },
-  "eslintConfig": {
-    "parser": "babel-eslint",
-    "extends": [
-      "airbnb-base",
-      "plugin:flowtype/recommended",
-      "plugin:jest/recommended",
-      "prettier",
-      "prettier/react",
-      "prettier/flowtype"
-    ],
-    "plugins": ["prettier", "jest", "flowtype"],
-    "env": {
-      "jest/globals": true
-    },
-    "rules": {
-      "prettier/prettier": "error"
-    }
+  "homepage": "https://github.com/evenchange4/michaelhsu#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evenchange4/michaelhsu.git"
   }
 }

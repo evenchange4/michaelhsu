@@ -1,10 +1,10 @@
 sudo: false
 language: node_js
 node_js:
-  - 10.0.0
+  - 11.6.0
 env:
   global:
-    - YARN_VERSION=1.6.0
+    - YARN_VERSION=1.13.0
 
 before_install:
   - export PATH="$HOME/.yarn/bin:$PATH"
@@ -18,11 +18,12 @@ install:
 
 script:
   - yarn run eslint
-  # - yarn run test
-  - yarn run flow
+  - yarn run test
+  - yarn run flow-coverage
+  - yarn run build
 
-# after_success:
-  # - ./node_modules/.bin/codecov
+after_success:
+  - ./node_modules/.bin/codecov
 
 deploy:
   - provider: npm
@@ -37,8 +38,9 @@ deploy:
 cache:
   yarn: true
   directories:
-    - "~/.yarn"
+    - '~/.yarn'
     - node_modules
 
 notifications:
-  email: evenchange4@gmail.com
+  email:
+    - evenchange4@gmail.com

@@ -1,7 +1,7 @@
 // @flow
-const dfFormat = require('date-fns/format');
+import { format as dfFormat } from 'date-fns';
 
-const format = (date /* : number */) /* : string */ =>
-  dfFormat(new Date(date), 'MMM DD, YYYY');
+const format = (date: number): string =>
+  dfFormat(new Date(date), 'MMM dd, yyyy');
 
-module.exports = format;
+export default format;
