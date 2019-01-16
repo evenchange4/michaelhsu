@@ -1,5 +1,10 @@
 ## Unreleased (2019-01-16)
 
+## 1.1.0 (2019-01-16)
+
+- 1.1.0 ([a81bfd1](https://github.com/evenchange4/michaelhsu/commit/a81bfd1))
+- refactor: use hsu-scripts (#32) ([670172d](https://github.com/evenchange4/michaelhsu/commit/670172d)), closes [#32](https://github.com/evenchange4/michaelhsu/issues/32)
+
 ## <small>1.0.1 (2018-05-24)</small>
 
 - 1.0.1 ([d2a58d2](https://github.com/evenchange4/michaelhsu/commit/d2a58d2))
