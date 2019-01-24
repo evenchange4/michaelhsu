@@ -1,4 +1,15 @@
-## Unreleased (2019-01-16)
+## Unreleased (2019-01-24)
+
+## <small>1.1.2 (2019-01-24)</small>
+
+- 1.1.2 ([1b0d7f7](https://github.com/evenchange4/michaelhsu/commit/1b0d7f7))
+- feat(App): add cv link (#38) ([714945e](https://github.com/evenchange4/michaelhsu/commit/714945e)), closes [#38](https://github.com/evenchange4/michaelhsu/issues/38)
+- chore(deps): update dependency eslint to v5.12.1 (#34) ([fc4b9f2](https://github.com/evenchange4/michaelhsu/commit/fc4b9f2)), closes [#34](https://github.com/evenchange4/michaelhsu/issues/34)
+- chore(deps): update dependency flow-bin to v0.91.0 (#33) ([a4005bd](https://github.com/evenchange4/michaelhsu/commit/a4005bd)), closes [#33](https://github.com/evenchange4/michaelhsu/issues/33)
+- chore(deps): update dependency jest to v24.0.0-alpha.13 (#37) ([0b5fc1c](https://github.com/evenchange4/michaelhsu/commit/0b5fc1c)), closes [#37](https://github.com/evenchange4/michaelhsu/issues/37)
+- chore(deps): update dependency prettier to v1.16.0 (#35) ([29bb8cb](https://github.com/evenchange4/michaelhsu/commit/29bb8cb)), closes [#35](https://github.com/evenchange4/michaelhsu/issues/35)
+- chore(deps): update dependency prettier to v1.16.1 (#36) ([c900323](https://github.com/evenchange4/michaelhsu/commit/c900323)), closes [#36](https://github.com/evenchange4/michaelhsu/issues/36)
+- docs(CHANGELOG): release 1.1.1 ([4c6b87a](https://github.com/evenchange4/michaelhsu/commit/4c6b87a))
 
 ## <small>1.1.1 (2019-01-16)</small>
 
