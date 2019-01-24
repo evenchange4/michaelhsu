@@ -9,6 +9,7 @@ import { type Item, type Post } from './type.flow';
 
 const items: Array<Item> = [
   { label: 'Website', url: 'https://michaelhsu.tw' },
+  { label: 'CV', url: 'https://cv.michaelhsu.tw' },
   { label: 'Twitter', url: 'https://twitter.com/evenchange4' },
   { label: 'GitHub', url: 'https://github.com/evenchange4' },
   { label: 'Blog', url: 'https://medium.com/@evenchange4/latest' },

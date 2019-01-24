@@ -41,7 +41,7 @@ For more information go to https://github.com/evenchange4/michaelhsu
 
 ### Requirements
 
-- node 11.6.0
+- node 11.7.0
 - yarn 1.13.0
 
 ```bash
