@@ -1,4 +1,14 @@
-## Unreleased (2019-01-24)
+## Unreleased (2019-02-11)
+
+## <small>1.1.3 (2019-02-11)</small>
+
+- 1.1.3 ([31561a4](https://github.com/evenchange4/michaelhsu/commit/31561a4))
+- chore(deps): ncu update ([1e2a572](https://github.com/evenchange4/michaelhsu/commit/1e2a572))
+- chore(deps): update dependency jest to v24.0.0 (#40) ([f521157](https://github.com/evenchange4/michaelhsu/commit/f521157)), closes [#40](https://github.com/evenchange4/michaelhsu/issues/40)
+- chore(deps): update dependency jest to v24.0.0-alpha.15 (#39) ([a8cc84c](https://github.com/evenchange4/michaelhsu/commit/a8cc84c)), closes [#39](https://github.com/evenchange4/michaelhsu/issues/39)
+- chore(deps): update dependency lint-staged to v8.1.1 (#41) ([944b05f](https://github.com/evenchange4/michaelhsu/commit/944b05f)), closes [#41](https://github.com/evenchange4/michaelhsu/issues/41)
+- chore(deps): update dependency prettier to v1.16.2 (#42) ([dcca7a6](https://github.com/evenchange4/michaelhsu/commit/dcca7a6)), closes [#42](https://github.com/evenchange4/michaelhsu/issues/42)
+- docs(CHANGELOG): release 1.1.2 ([8c753aa](https://github.com/evenchange4/michaelhsu/commit/8c753aa))
 
 ## <small>1.1.2 (2019-01-24)</small>
 
