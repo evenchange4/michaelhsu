@@ -3420,10 +3420,10 @@ ini@^1.3.2, ini@^1.3.4, ini@~1.3.0:
   resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
   integrity sha512-RZY5huIKCMRWDUqZlEi72f/lmXKMvuszcMBduliQ3nnWbx9X/ZBQO7DijMEYS9EhHBb2qacRUMtC7svLwe0lcw==
 
-ink-select-input@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/ink-select-input/-/ink-select-input-2.0.0.tgz#faf83653aa2c9346400c2927d1e9530f8939bed8"
-  integrity sha512-KwX4LInVVxg26c6K38GfUSyLC/GuajL2Ohb3kXuQch0Lejy0bsA160USNuX9cCLuD+o6GE2nqOAZnE9FOhUuFw==
+ink-select-input@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/ink-select-input/-/ink-select-input-3.0.0.tgz#a0259eb334f76465c127489f3578bc600781c0a3"
+  integrity sha512-7qvlzELKEFwOcA9Co750KZU+wicdc3lEoKjQNriMNoBc+5m3D2yOkZ1puxxg1Lb6YXgEbXlKskjMAWa6TcZ/Sw==
   dependencies:
     arr-rotate "^1.0.0"
     figures "^2.0.0"
