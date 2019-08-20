@@ -35,7 +35,7 @@
     "opn": "^5.4.0",
     "term-img": "^4.0.0",
     "terminal-image": "^0.1.2",
-    "yargs": "^13.2.1"
+    "yargs": "^14.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.3.4",
