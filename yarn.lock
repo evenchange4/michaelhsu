@@ -893,6 +893,13 @@ ansi-escapes@^3.0.0, ansi-escapes@^3.1.0, ansi-escapes@^3.2.0:
   resolved "https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-3.2.0.tgz#8780b98ff9dbf5638152d1f1fe5c1d7b4442976b"
   integrity sha512-cBhpre4ma+U0T1oM5fXg7Dy1Jw7zzwv7lt/GoCpr+hDQJoYnKVPLL4dCvSEFMmQurOQvSrwT7SL/DAlhBI97RQ==
 
+ansi-escapes@^4.1.0:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-4.3.1.tgz#a5c47cc43181f1f38ffd7076837700d395522a61"
+  integrity sha512-JWF7ocqNrp8u9oqpgV+wH5ftbt+cfvv+PTjOvKLT3AdYly/LmORARfEVT1iyjwN+4MqE5UmVKoAdIBqeoCHgLA==
+  dependencies:
+    type-fest "^0.11.0"
+
 ansi-regex@^2.0.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-2.1.1.tgz#c3b33ab5ee360d86e0e628f0468ae7ef27d654df"
@@ -940,10 +947,10 @@ app-path@^2.1.0:
   dependencies:
     execa "^0.4.0"
 
-app-path@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/app-path/-/app-path-3.0.0.tgz#47d64af579a3e50c7a1240dc6588c47e1590a6e2"
-  integrity sha512-qLepHO2TzNvEQRNMaUMBYIBqlstF2rCdnEZqnpnSgCjoMudEyguz8INjDw1V/pIzY4jUzyPjuVPj8MExgLj55w==
+app-path@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/app-path/-/app-path-3.2.0.tgz#06d426e0c988885264e0aa0a766dfa2723491633"
+  integrity sha512-PQPaKXi64FZuofJkrtaO3I5RZESm9Yjv7tkeJaDz4EZMeBBfGtr5MyQ3m5AC7F0HVrISBLatPxAAAgvbe418fQ==
   dependencies:
     execa "^1.0.0"
 
@@ -3866,12 +3873,12 @@ iterm2-version@^3.0.0:
     app-path "^2.1.0"
     plist "^3.0.1"
 
-iterm2-version@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/iterm2-version/-/iterm2-version-4.0.0.tgz#57d3f3e605e672b02092372386ea0ab9b59d4a25"
-  integrity sha512-0jLvTpC1iheDJq9C0BVwj07Mu0yCFuDLQc+85E/P/6L9U328qcKVuxJGhDZpt8x2bH0cdIZ7v/JBs4Ym2xUBwQ==
+iterm2-version@^4.1.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/iterm2-version/-/iterm2-version-4.2.0.tgz#b78069f747f34a772bc7dc17bda5bd9ed5e09633"
+  integrity sha512-IoiNVk4SMPu6uTcK+1nA5QaHNok2BMDLjSl5UomrOixe5g4GkylhPwuiGdw00ysSCrXAKNMfFTu+u/Lk5f6OLQ==
   dependencies:
-    app-path "^3.0.0"
+    app-path "^3.2.0"
     plist "^3.0.1"
 
 jest-changed-files@^24.0.0:
@@ -6625,13 +6632,13 @@ term-img@^3.0.0:
     ansi-escapes "^3.1.0"
     iterm2-version "^3.0.0"
 
-term-img@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/term-img/-/term-img-4.0.0.tgz#238363ddf6eb180a062fa2e232bb7b7eb6a7058d"
-  integrity sha512-Rug9/fdT5BAgLhrWvVXQealky6czqrFGeKwVS2kubuYn70Gw98JaIxAocNO9ol4qZFlm2A+8nS8xnnVYGbvXcg==
+term-img@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/term-img/-/term-img-5.0.0.tgz#d563b82b9dad2a8a6cc28e07dc613a62d9273911"
+  integrity sha512-Wpi50MA7bJwJKi5bVYu/t+xu9kNqesdzg6gWHOh3+1R9NRx1LmYoCMly9bUiabMZPNPH3juT8lOhZxUYxPEIBw==
   dependencies:
-    ansi-escapes "^3.1.0"
-    iterm2-version "^4.0.0"
+    ansi-escapes "^4.1.0"
+    iterm2-version "^4.1.0"
 
 terminal-image@^0.1.2:
   version "0.1.2"
@@ -6806,6 +6813,11 @@ type-check@~0.3.2:
   integrity sha1-WITKtRLPHTVeP7eE8wgEsrUg23I=
   dependencies:
     prelude-ls "~1.1.2"
+
+type-fest@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.11.0.tgz#97abf0872310fed88a5c466b25681576145e33f1"
+  integrity sha512-OdjXJxnCN1AvyLSzeKIgXTXxV+99ZuXl3Hpo9XpJAv9MBcHrrJOQ5kV7ypXOuQie+AmWG25hLbiKdwYTifzcfQ==
 
 ua-parser-js@^0.7.18:
   version "0.7.19"
